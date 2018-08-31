@@ -35,8 +35,21 @@
             <form class="filter" method="get" action="https://echo.htmlacademy.ru">
               <fieldset>
                 <legend>Стоимость:</legend>
-                <input class="price-slider" type="range" min="0" max="15000" step="100" value="9900">
-                <p>от <span class="price-from">0</span> до <span class="price-to">15 000</span></p>
+                <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="toggle toggle-min">
+                    </div>
+                    <div class="toggle toggle-max">
+                    </div>
+                  </div>  
+                  <div class="price-controls">
+                    <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                    <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                  </div>
+                </div>  
               </fieldset>
               <fieldset>
                 <legend>Сетка:</legend>
@@ -229,9 +242,9 @@
           <label for="feedback-letter">Текст письма:</label>
           <textarea id="feedback-letter" name="letter" placeholder="В свободной форме"></textarea>
         </p>
-        <button class="button-submit" type="submit">Отправить</button>
+        <button class="button button-submit" type="submit">Отправить</button>
       </form>
-      <button class="popup-close" type="button"><span class="visually-hidden">Закрыть</span></button>	
+      <button class="popup-close" type="button">Закрыть</button>	
     </section> 
   </body>
 </html>
