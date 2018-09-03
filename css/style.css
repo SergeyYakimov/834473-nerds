@@ -29,7 +29,6 @@ a {
 .main-header {
   background-color: rgb(238,238,238);
   padding-top: 49px;
-  min-height: 500px;
 }
 
 .header-container,
@@ -60,27 +59,38 @@ a {
 .site-navigation {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin: 0;
   margin-left: 204px;
   margin-right: 240px;
   padding: 0;
   padding-top: 14px;
   width: 440px;
+  padding-bottom: 4px;
+}
+
+.site-navigation li {
+  margin-right: 45px;
+}
+
+.site-navigation li:nth-child(2n),
+.site-navigation li:nth-child(3n) {
+  margin-right: 46px;
+}
+
+.site-navigation li:nth-child(4n) {
+  margin-right: 0;
 }
 
 .user-navigation {
   margin: 0;
   padding: 0;
   padding-top: 14px;
-  width: 100px;
   display: flex;
   flex-wrap: wrap;
 }
 
 .user-navigation .basket {
   position: relative;
-  padding-left: 40px;
 }
 
 .basket::before {
@@ -100,13 +110,12 @@ a {
 .user-navigation a {
   display: block;
   padding-top: 10px;
-  padding-bottom: 4px;
   vertical-align: middle;
   color: #000000;
 }
 
 .user-navigation a {
-  width: 76px;
+  padding-left: 41px;
 }
 
 .site-navigation a:hover,
@@ -241,7 +250,7 @@ a {
 
 .slogan {
   margin: 0;
-  margin-bottom: 27px;
+  margin-bottom: 26px;
   font-size: 55px;
   font-weight: 500;
   line-height: 55px;
@@ -250,7 +259,7 @@ a {
 
 .slogan-additional {
   max-width: 420px;
-  margin-bottom: 40px;
+  margin-bottom: 41px;
 }
 
 .slider-item:nth-child(2) .slogan-additional {
@@ -270,7 +279,6 @@ a {
 }
 
 .services {
-  margin-top: -5px;
   margin-bottom: 37px;
 }
 
@@ -310,17 +318,17 @@ a {
 .services-item h3 {
   margin: 0;
   padding: 0;
-  margin-bottom: 15px;
-  font-size: 24.5px;
-  line-height: 31.5px;
+  margin-bottom: 16px;
+  font-size: 24px;
+  line-height: 30px;
   font-weight: bold;
   text-transform: uppercase;
   color: #000000;
 }
 
 .services-item p {
-  margin-bottom: 33px;
-  padding-right: 40px;
+  margin-bottom: 34px;
+  padding-right: 39px;
 }
 
 .services-item .services-button {
@@ -624,8 +632,8 @@ a {
   display: block;
   width: 240px;
   padding: 15px 0;
-  font-size: 17.5px;
-  line-height: 17.5px;
+  font-size: 16px;
+  line-height: 18px;
   font-weight: 500;
   text-align: center;
   vertical-align: middle;
@@ -817,9 +825,9 @@ a {
   padding-bottom: 110px;
   margin-top: 56px;
   margin-bottom: 55px;
-  font-size: 54px;
+  font-size: 55px;
   font-weight: 500;
-  line-height: 54px;
+  line-height: 55px;
   color: #000000;
   text-align: center;
 }
@@ -837,11 +845,15 @@ a {
   margin: 0px;
   padding: 0px;
   border: none;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 
 .filter fieldset:first-child {
-  margin-bottom: 60px;
+  margin-bottom: 55px;
+}
+
+.filter fieldset:nth-child(3) {
+  margin-bottom: 30px;
 }
 
 .filter legend {
@@ -932,7 +944,7 @@ a {
 .filter ul {
   margin: 0;
   padding: 0;
-  margin-top: -35px;
+  margin-top: -30px;
   list-style: none;
   line-height: 20px;
   color: #283136;
@@ -1037,8 +1049,8 @@ a {
 
 .filter-button {
   width: 260px;
-  font-size: 17.5px;
-  line-height: 17.5px;
+  font-size: 16px;
+  line-height: 18px;
   color: #000000;
   background-color: #eeeeee;
   font-weight: 500;
@@ -1064,7 +1076,7 @@ a {
 .sorting-location {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 55px;
+  margin-bottom: 50px;
   text-transform: uppercase;
 }
 
@@ -1072,7 +1084,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  margin-left: 240px;
+  margin-left: 242px;
   padding: 0;
 }
 
@@ -1164,12 +1176,17 @@ a {
   position: relative;
   width: 358px;
   height: 616px;
-  margin-bottom: 33px;
+  padding-top: 10px;
+  margin-bottom: 25px;
   margin-right: 40px;
 }
 
 .catalog-item:nth-child(2n) {
   margin-right: 0;
+}
+
+.catalog-item:nth-child(n+3) {
+  padding-top: 5px;
 }
 
 .catalog-item:nth-child(5),
@@ -1182,10 +1199,14 @@ a {
   position: absolute;
   width: 360px;
   height: 40px;
-  top: 0px;
+  top: 3px;
   background-image: url("../img/browser.svg");
   background-repeat: no-repeat;
   opacity: 0.12;
+}
+
+.catalog-item:nth-child(n+3)::after {
+  top: 0px;
 }
 
 .catalog-item:hover::after,
@@ -1196,8 +1217,8 @@ a {
 .catalog-item > p {
   margin: 0;
   padding: 0;
-  margin-bottom: -5px;
   position: relative;
+  margin-top: -5px;
 }
 
 .catalog-item:hover {
@@ -1226,13 +1247,13 @@ a {
 }
 
 .catalog-item-title {
-  font-size: 17.5px;
-  line-height: 31.5px;
+  font-size: 18px;
+  line-height: 30px;
   font-weight: bold;
   color: #000000;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 .catalog-category {
@@ -1245,7 +1266,6 @@ a {
 
 .catalog-item-price {
   margin-top: 30px;
-  margin-bottom: 43px;
 }
 
 .button-price {
@@ -1286,7 +1306,7 @@ a {
 }
 
 .pagination-item a {
-  width: 45px;
+  width: 47px;
   height: 29px;
   display: inline-block;
   font-size: 16px;
