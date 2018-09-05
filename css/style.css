@@ -694,23 +694,22 @@ a {
 }
 
 .popup {
-  display: none;
   position: absolute;
   z-index: 2;
-  top: 2420px;
+  top: 2440px;
   left: 50%;
   margin-left: -480px;
   width: 760px;
   padding-left: 100px;
   padding-right: 100px;
-  padding-top: 73px;
+  padding-top: 69px;
   padding-bottom: 84px;
   background-color: #ffffff;
   box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);	
 }
 
 .popup-main {
-  top: 1710px;
+  top: 1705px;
 }
 
 .popup-open {
@@ -720,8 +719,8 @@ a {
 
 .popup-close {
   position: absolute;
-  top: 86px;
-  right: 90px;
+  top: 80px;
+  right: 87px;
   width: 22px;
   height: 22px;
   font-size: 0;
@@ -729,8 +728,7 @@ a {
   background-color: #ffffff;
   background-image: url("../img/close-cross.svg");
   background-repeat: no-repeat;
-  border: 0;
-  cursor: pointer;
+  border: 0; 
 }
 
 .popup-close:hover {
@@ -741,11 +739,12 @@ a {
   opacity: 0.1;
 }
 
-.popup b {
+.popup div {
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
   color: #000000;
+  margin-bottom: 24px;
 }
 
 .feedback-item {
@@ -753,11 +752,11 @@ a {
   flex-direction: column;
   flex-wrap: wrap;
   margin-left: 40px;
-  margin-bottom: 60px;
+  margin-bottom: 18px;
 }
 
-.feedback-item:last-child {
-  margin-bottom: 47px;
+.feedback-item:nth-child(3) {
+  margin-bottom: 45px;
 }
 
 .feedback-form {
@@ -767,9 +766,9 @@ a {
 }
 
 .feedback-item label {
-  margin-bottom: 12px;
-  font-size: 17.5px;
-  line-height: 17.5px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 18px;
   font-weight: bold;
   color: #000000;
 }
@@ -777,29 +776,35 @@ a {
 .feedback-item input,
 .feedback-item textarea {
   box-sizing: border-box;
-  font-size: 17.5px;
-  line-height: 17.5px;
-  color: rgba(68,68,68, 0.5);
   border: 2px solid #d7dcde;
 }
 
 .feedback-item input {
   width: 360px;
-  padding-top: 18px;
+  padding-top: 11px;
   padding-bottom: 16px;
   padding-left: 15px;
 }
 
 .feedback-item textarea {
   width: 760px;
-  padding-top: 14px;
+  padding-top: 10px;
   padding-left: 15px;
   min-height: 118px;
   resize: none;
 }
 
+.feedback-item input::placeholder,
+.feedback-item textarea::placeholder {
+  color: rgba(68,68,68, 0.5);
+  font-size: 16px;
+  line-height: 18px;
+}
+
 .button-submit {
   margin-left: 40px;
+  width: 260px;
+  padding: 17px 0;
 }
 
 .feedback-item input[type="text"]:hover {
@@ -808,6 +813,9 @@ a {
 
 .feedback-item input[type="text"]:focus {
   border: 2px solid #000000;
+}
+
+.feedback-item input[type="text"]:focus::placeholder {
   color: #444444;
 }
 
