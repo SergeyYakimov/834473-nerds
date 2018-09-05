@@ -933,7 +933,8 @@ a {
   color: #444;
 }
 
-.feedback-item input[type='text']:invalid {
+.feedback-item input[type='text']:invalid,
+.feedback-item input[type="email"]:invalid {
   color: #e74246;
   border: 2px solid #e74246;
 }
@@ -1247,16 +1248,18 @@ a {
   display: flex;
 
   margin: 0;
-  margin-left: 242px;
+  margin-left: 240px;
   padding: 0;
 
+  width: 300px;
+  
   flex-wrap: wrap;
 }
 
 .sorting b {
-  font-size: 17.5px;
+  font-size: 18px;
   font-weight: bold;
-  line-height: 17.5px;
+  line-height: 18px;
 
   padding-right: 27px;
 
@@ -1268,7 +1271,7 @@ a {
 }
 
 .sorting-item {
-  margin-right: 27px;
+  margin-right: 25px;
 }
 
 .sorting-item a {
