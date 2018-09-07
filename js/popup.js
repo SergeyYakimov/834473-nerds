@@ -63,7 +63,7 @@ form.addEventListener("submit", function (evt) {
       evt.preventDefault();
       if (popup.classList.contains("popup-show")) {
         popup.classList.remove("popup-show");
-        popup.classList.remove("poup-error");
+        popup.classList.remove("popup-error");
       }
     }
   });
