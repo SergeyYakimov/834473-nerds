@@ -60,6 +60,7 @@ a {
 }
 
 .main-header {
+  min-width: 1200px;
   padding-top: 49px;
 
   background-color: rgb(238,238,238);
